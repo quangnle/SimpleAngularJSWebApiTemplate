@@ -1,7 +1,7 @@
 ﻿'use strict';
 app.factory('gameService', ['$http', function ($http) {
 
-    var serviceBase = ngAuthSettings.apiServiceBaseUri;
+    var serviceBase = 'http://localhost:51153/';
     var gameServiceFactory = {};
 
     var _test = function () {

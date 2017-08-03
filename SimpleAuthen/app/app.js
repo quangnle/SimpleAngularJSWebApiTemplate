@@ -27,11 +27,6 @@ app.config(function ($routeProvider) {
 
 var serviceBase = 'http://localhost:51153/';
 
-app.constant('ngAuthSettings', {
-    apiServiceBaseUri: serviceBase,
-    clientId: 'ngAuthApp'
-});
-
 app.config(function ($httpProvider) {
     $httpProvider.interceptors.push('authInterceptorService');
 });

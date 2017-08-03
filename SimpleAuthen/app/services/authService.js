@@ -1,7 +1,7 @@
 ﻿'use strict';
 app.factory('authService', ['$http', '$q', 'localStorageService', function ($http, $q, localStorageService) {
 
-    var serviceBase = ngAuthSettings.apiServiceBaseUri;
+    var serviceBase = 'http://localhost:51153/';
     var authServiceFactory = {};
 
     var _authentication = {
